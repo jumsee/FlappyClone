@@ -48,7 +48,8 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         score = 0;
-        
+        scoreText.text = "Score: " + score;
+
         // Destroy and reset tubes
         foreach (GameObject tube in tubes)
         {
